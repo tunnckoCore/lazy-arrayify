@@ -57,7 +57,8 @@
     "reflinks": [
       "lazy-cache",
       "browserify",
-      "limon"
+      "limon",
+      "isarray"
     ],
     "lint": {
       "reflinks": true

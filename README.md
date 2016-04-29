@@ -16,7 +16,31 @@ npm i lazy-arrayify --save
 const lazyArrayify = require('lazy-arrayify')
 ```
 
-### [.lazyArrayify](index.js#L66)
+### [isArray](index.js#L52)
+> Check if value is array using the [isarray][] module.
+
+**Params**
+
+* `val` **{Mixed}**    
+* `returns` **{Array}**  
+
+**Example**
+
+```js
+var isArray = require('lazy-arrayify').isArray
+
+console.log(isArray(1234))        // => false
+console.log(isArray('str'))       // => false
+console.log(isArray(null))        // => false
+console.log(isArray())            // => false
+console.log(isArray(0))           // => false
+console.log(isArray(false))       // => false
+console.log(isArray([null, 123])) // => true
+console.log(isArray([null]))      // => true
+console.log(isArray([false]))     // => true
+```
+
+### [.arrayify](index.js#L83)
 > Returns empty array on falsey values.
 
 **Params**
@@ -27,7 +51,7 @@ const lazyArrayify = require('lazy-arrayify')
 **Example**
 
 ```js
-var arrayify = require('lazy-arrayify')
+var arrayify = require('lazy-arrayify').arrayify
 
 console.log(arrayify(1234))        // => [1234]
 console.log(arrayify('str'))       // => ['str']
