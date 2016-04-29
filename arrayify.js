@@ -7,7 +7,12 @@
 
 'use strict'
 
-var utils = require('./index')
+var utils = require('lazy-cache')(require)
+var fn = require
+
+require = utils // eslint-disable-line no-undef, no-native-reassign
+require('isarray', 'isArray')
+require = fn // eslint-disable-line no-undef, no-native-reassign
 
 /**
  * > Returns empty array on falsey values.

@@ -7,6 +7,13 @@
 
 'use strict'
 
+var utils = require('lazy-cache')(require)
+var fn = require
+
+require = utils // eslint-disable-line no-undef, no-native-reassign
+require('isarray', 'isArray')
+require = fn // eslint-disable-line no-undef, no-native-reassign
+
 /**
  * > Check if value is array using the [isarray][] module.
  *
@@ -32,4 +39,6 @@
  * @api public
  */
 
-module.exports = require('isarray')
+module.exports = function isArray (val) {
+  return utils.isArray(val)
+}
