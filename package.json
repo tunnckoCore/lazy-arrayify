@@ -53,14 +53,18 @@
         "limon-prev-next",
         "isarray",
         "arrify",
-        "postjson"
+        "postjson",
+        "lazy-utils"
       ]
     },
     "reflinks": [
       "lazy-cache",
       "browserify",
       "limon",
-      "isarray"
+      "isarray",
+      "extend-shallow",
+      "isobject",
+      "is-extendable"
     ],
     "lint": {
       "reflinks": true
