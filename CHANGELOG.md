@@ -1,5 +1,9 @@
 
 
+## 1.0.3 - 2016-04-29
+- Release v1.0.3 / npm@v1.0.3
+- tweak some travis and other loading bugs
+
 ## 1.0.2 - 2016-04-29
 - Release v1.0.2 / npm@v1.0.2
 - add missing files from `files` field in pkg json
