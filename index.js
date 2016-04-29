@@ -1,3 +1,10 @@
+/*!
+ * lazy-utils <https://github.com/tunnckoCore/lazy-utils>
+ *
+ * Copyright (c) 2016 Charlike Mike Reagent <@tunnckoCore> (http://www.tunnckocore.tk)
+ * Released under the MIT license.
+ */
+
 'use strict'
 
 /**
@@ -52,12 +59,6 @@ require = utils // eslint-disable-line no-undef, no-native-reassign
 require('isarray', 'isArray')
 
 /**
- * Restore `require`
- */
-
-require = fn // eslint-disable-line no-undef, no-native-reassign
-
-/**
  * > Returns empty array on falsey values.
  *
  * **Example**
@@ -75,16 +76,19 @@ require = fn // eslint-disable-line no-undef, no-native-reassign
  * console.log(arrayify([false]))     // => [false]
  * ```
  *
+ * @name   .arrayify
  * @param  {Mixed} `val`
  * @return {Array}
  * @api public
  */
 
-utils.arrayify = function arrayify (val) {
-  if (!val) return []
-  if (!utils.isArray(val)) return [val]
-  return val
-}
+require('./arrayify', 'arrayify')
+
+/**
+ * Restore `require`
+ */
+
+require = fn // eslint-disable-line no-undef, no-native-reassign
 
 /**
  * Expose `utils` modules
