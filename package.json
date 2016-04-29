@@ -1,0 +1,66 @@
+{
+  "name": "lazy-arrayify",
+  "version": "0.1.0",
+  "description": "We are lazy, also lazy-cached and browserify ready - just arrayify, falsey values returns empty array.",
+  "repository": "tunnckoCore/lazy-arrayify",
+  "author": "Charlike Mike Reagent <@tunnckoCore> (http://www.tunnckocore.tk)",
+  "precommit.silent": true,
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "standard && node test.js"
+  },
+  "dependencies": {
+    "isarray": "^1.0.0",
+    "lazy-cache": "^2.0.0"
+  },
+  "devDependencies": {
+    "assertit": "^0.1.0",
+    "pre-commit": "*"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "arr",
+    "array",
+    "arrayify",
+    "arrify",
+    "browser",
+    "browserify",
+    "cache",
+    "cached",
+    "ify",
+    "lazy",
+    "lazy-arrayify",
+    "lazy-cache",
+    "util",
+    "utility",
+    "utils"
+  ],
+  "verb": {
+    "run": true,
+    "toc": false,
+    "layout": "empty",
+    "tasks": [
+      "readme"
+    ],
+    "related": {
+      "list": [
+        "limon",
+        "limon-prev-next",
+        "posttjson",
+        "isarray",
+        "lazy-cache",
+        "arrayify",
+        "arrify"
+      ]
+    },
+    "reflinks": [
+      "limon"
+    ],
+    "lint": {
+      "reflinks": true
+    }
+  }
+}
