@@ -1,6 +1,6 @@
-# [lazy-arrayify][author-www-url] [![npmjs.com][npmjs-img]][npmjs-url] [![The MIT License][license-img]][license-url] 
+# [lazy-arrayify][author-www-url] [![npmjs.com][npmjs-img]][npmjs-url] [![The MIT License][license-img]][license-url] [![npm downloads][downloads-img]][downloads-url]  
 
-> We are lazy, also lazy-cached and browserify ready - just arrayify, falsey values returns empty array.
+> We are lazy, also [lazy-cache][]-d and [browserify][]-ready - just arrayify, falsey values returns empty array.
 
 [![code climate][codeclimate-img]][codeclimate-url] [![standard code style][standard-img]][standard-url] [![travis build status][travis-img]][travis-url] [![coverage status][coveralls-img]][coveralls-url] [![dependency status][david-img]][david-url]
 
@@ -16,11 +16,35 @@ npm i lazy-arrayify --save
 const lazyArrayify = require('lazy-arrayify')
 ```
 
+### [.lazyArrayify](index.js#L66)
+> Returns empty array on falsey values.
+
+**Params**
+
+* `val` **{Mixed}**    
+* `returns` **{Array}**  
+
+**Example**
+
+```js
+var arrayify = require('lazy-arrayify')
+
+console.log(arrayify(1234))        // => [1234]
+console.log(arrayify('str'))       // => ['str']
+console.log(arrayify(null))        // => []
+console.log(arrayify())            // => []
+console.log(arrayify(0))           // => []
+console.log(arrayify(false))       // => []
+console.log(arrayify([null, 123])) // => [null, 123]
+console.log(arrayify([false]))     // => [false]
+```
+
 ## Related
+* [arrify](https://www.npmjs.com/package/arrify): Convert a value to an array | [homepage](https://github.com/sindresorhus/arrify)
 * [isarray](https://www.npmjs.com/package/isarray): Array#isArray for older browsers | [homepage](https://github.com/juliangruber/isarray)
-* [lazy-cache](https://www.npmjs.com/package/lazy-cache): Cache requires to be lazy-loaded when needed. | [homepage](https://github.com/jonschlinkert/lazy-cache)
 * [limon](https://www.npmjs.com/package/limon): The pluggable JavaScript lexer on per character basis. | [homepage](https://github.com/limonjs/limon)
 * [limon-prev-next](https://www.npmjs.com/package/limon-prev-next): Plugin for [limon][] pluggable lexer that adds `prev` and `next` methods. | [homepage](https://github.com/limonjs/limon-prev-next)
+* [postjson](https://www.npmjs.com/package/postjson): Transforming JSON with plugins. | [homepage](https://github.com/postjson/postjson)
 
 ## Contributing
 Pull requests and stars are always welcome. For bugs and feature requests, [please create an issue](https://github.com/tunnckoCore/lazy-arrayify/issues/new).  
@@ -30,14 +54,18 @@ But before doing anything, please read the [CONTRIBUTING.md](./CONTRIBUTING.md) 
 
 [![tunnckoCore.tk][author-www-img]][author-www-url] [![keybase tunnckoCore][keybase-img]][keybase-url] [![tunnckoCore npm][author-npm-img]][author-npm-url] [![tunnckoCore twitter][author-twitter-img]][author-twitter-url] [![tunnckoCore github][author-github-img]][author-github-url]
 
-[isarray]: https://github.com/juliangruber/isarray
 [lazy-cache]: https://github.com/jonschlinkert/lazy-cache
+[browserify]: https://github.com/substack/node-browserify
+[limon]: https://github.com/limonjs/limon
 
 [npmjs-url]: https://www.npmjs.com/package/lazy-arrayify
 [npmjs-img]: https://img.shields.io/npm/v/lazy-arrayify.svg?label=lazy-arrayify
 
 [license-url]: https://github.com/tunnckoCore/lazy-arrayify/blob/master/LICENSE
-[license-img]: https://img.shields.io/badge/license-MIT-blue.svg
+[license-img]: https://img.shields.io/npm/l/lazy-arrayify.svg
+
+[downloads-url]: https://www.npmjs.com/package/lazy-arrayify
+[downloads-img]: https://img.shields.io/npm/dm/lazy-arrayify.svg
 
 [codeclimate-url]: https://codeclimate.com/github/tunnckoCore/lazy-arrayify
 [codeclimate-img]: https://img.shields.io/codeclimate/github/tunnckoCore/lazy-arrayify.svg
