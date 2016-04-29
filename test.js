@@ -17,6 +17,12 @@ test('should expose `.arrayify` and `.isArray` methods', function (done) {
   test.strictEqual(typeof lazy.isArray, 'function')
   test.strictEqual(typeof arrayify, 'function')
   test.strictEqual(typeof isarray, 'function')
+  test.strictEqual(isarray(), false)
+  test.strictEqual(isarray(0), false)
+  test.strictEqual(isarray(null), false)
+  test.strictEqual(isarray([]), true)
+  test.strictEqual(isarray([null]), true)
+  test.strictEqual(isarray([1, 2, 3]), true)
   done()
 })
 
