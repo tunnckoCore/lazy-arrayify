@@ -43,9 +43,9 @@ require = utils // eslint-disable-line no-undef, no-native-reassign
  * console.log(isArray([false]))     // => true
  * ```
  *
- * @name   isArray
+ * @name   .isArray
  * @param  {Mixed} `val`
- * @return {Array}
+ * @return {Boolean}
  * @api public
  */
 

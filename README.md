@@ -1,6 +1,6 @@
 # [lazy-arrayify][author-www-url] [![npmjs.com][npmjs-img]][npmjs-url] [![The MIT License][license-img]][license-url] [![npm downloads][downloads-img]][downloads-url]  
 
-> We are lazy, also [lazy-cache][]-d and [browserify][]-ready - just arrayify, falsey values returns empty array.
+> We are lazy, also [lazy-cache][]-d and [browserify][]-ready - just arrayify, falsey values returns empty array. In bonus with `.isArray` method.
 
 [![code climate][codeclimate-img]][codeclimate-url] [![standard code style][standard-img]][standard-url] [![travis build status][travis-img]][travis-url] [![coverage status][coveralls-img]][coveralls-url] [![dependency status][david-img]][david-url]
 
@@ -22,7 +22,7 @@ const lazyArrayify = require('lazy-arrayify')
 **Params**
 
 * `val` **{Mixed}**    
-* `returns` **{Array}**  
+* `returns` **{Boolean}**  
 
 **Example**
 
@@ -81,6 +81,7 @@ But before doing anything, please read the [CONTRIBUTING.md](./CONTRIBUTING.md) 
 [lazy-cache]: https://github.com/jonschlinkert/lazy-cache
 [browserify]: https://github.com/substack/node-browserify
 [limon]: https://github.com/limonjs/limon
+[isarray]: https://github.com/juliangruber/isarray
 
 [npmjs-url]: https://www.npmjs.com/package/lazy-arrayify
 [npmjs-img]: https://img.shields.io/npm/v/lazy-arrayify.svg?label=lazy-arrayify
