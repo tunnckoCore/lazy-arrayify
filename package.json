@@ -1,6 +1,6 @@
 {
   "name": "lazy-arrayify",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "We are lazy, also [lazy-cache][]-d and [browserify][]-ready - just arrayify, falsey values returns empty array.",
   "repository": "tunnckoCore/lazy-arrayify",
   "author": "Charlike Mike Reagent <@tunnckoCore> (http://www.tunnckocore.tk)",
